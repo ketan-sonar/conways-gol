@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convway's Game of Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./dist/script.js" defer></script>
+  </head>
+  <body class="bg-[#181818] text-white px-4 py-2 space-y-2">
+    <h1 class="text-3xl font-bold">Convway's Game of Life</h1>
+    <div class="flex gap-2">
+      <button id="startStop" class="bg-[#ff0000] text-white px-1 rounded">
+        Start
+      </button>
+      <button id="randomize" class="bg-[#ff0000] text-white px-1 rounded">
+        Randomize
+      </button>
+      <button id="clear" class="bg-[#ff0000] text-white px-1 rounded">
+        Clear
+      </button>
+    </div>
+    <p class="italic text-gray-400 text-sm">Click to toggle states of cells.</p>
+    <canvas id="canvas" class="border"></canvas>
+  </body>
+</html>
