@@ -76,7 +76,7 @@ function draw(ctx: CanvasRenderingContext2D) {
       ctx.fillStyle = "white";
       ctx.fillRect(x - 1, y - 1, 1, 1);
       if (board[r][c] == 1) {
-        ctx.fillRect(x + 1, y + 1, CELL_WIDTH - 2, CELL_HEIGHT - 2);
+        ctx.fillRect(x, y, CELL_WIDTH - 1, CELL_HEIGHT - 1);
       }
     }
   }
